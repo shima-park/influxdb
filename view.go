@@ -1,4 +1,4 @@
-package platform
+package influxdb
 
 import (
 	"context"
@@ -186,7 +186,8 @@ func MarshalViewPropertiesJSON(v ViewProperties) ([]byte, error) {
 			Shape string `json:"shape"`
 			SingleStatViewProperties
 		}{
-			Shape:                    "chronograf-v2",
+			Shape: "chronograf-v2",
+
 			SingleStatViewProperties: vis,
 		}
 	case TableViewProperties:
@@ -194,7 +195,8 @@ func MarshalViewPropertiesJSON(v ViewProperties) ([]byte, error) {
 			Shape string `json:"shape"`
 			TableViewProperties
 		}{
-			Shape:               "chronograf-v2",
+			Shape: "chronograf-v2",
+
 			TableViewProperties: vis,
 		}
 	case GaugeViewProperties:
@@ -202,7 +204,8 @@ func MarshalViewPropertiesJSON(v ViewProperties) ([]byte, error) {
 			Shape string `json:"shape"`
 			GaugeViewProperties
 		}{
-			Shape:               "chronograf-v2",
+			Shape: "chronograf-v2",
+
 			GaugeViewProperties: vis,
 		}
 	case XYViewProperties:
@@ -210,7 +213,8 @@ func MarshalViewPropertiesJSON(v ViewProperties) ([]byte, error) {
 			Shape string `json:"shape"`
 			XYViewProperties
 		}{
-			Shape:            "chronograf-v2",
+			Shape: "chronograf-v2",
+
 			XYViewProperties: vis,
 		}
 	case LinePlusSingleStatProperties:
@@ -218,7 +222,8 @@ func MarshalViewPropertiesJSON(v ViewProperties) ([]byte, error) {
 			Shape string `json:"shape"`
 			LinePlusSingleStatProperties
 		}{
-			Shape:                        "chronograf-v2",
+			Shape: "chronograf-v2",
+
 			LinePlusSingleStatProperties: vis,
 		}
 	case MarkdownViewProperties:
@@ -226,7 +231,8 @@ func MarshalViewPropertiesJSON(v ViewProperties) ([]byte, error) {
 			Shape string `json:"shape"`
 			MarkdownViewProperties
 		}{
-			Shape:                  "chronograf-v2",
+			Shape: "chronograf-v2",
+
 			MarkdownViewProperties: vis,
 		}
 	case LogViewProperties:

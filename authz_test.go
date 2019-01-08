@@ -1,9 +1,9 @@
-package platform_test
+package influxdb_test
 
 import (
 	"testing"
 
-	"github.com/influxdata/platform"
+	platform "github.com/influxdata/influxdb"
 )
 
 func TestPermission_Valid(t *testing.T) {

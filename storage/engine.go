@@ -8,12 +8,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/influxdata/influxdb/logger"
+	"github.com/influxdata/influxdb/models"
+	"github.com/influxdata/influxdb/tsdb"
+	"github.com/influxdata/influxdb/tsdb/tsi1"
+	"github.com/influxdata/influxdb/tsdb/tsm1"
 	"github.com/influxdata/influxql"
-	"github.com/influxdata/platform/logger"
-	"github.com/influxdata/platform/models"
-	"github.com/influxdata/platform/tsdb"
-	"github.com/influxdata/platform/tsdb/tsi1"
-	"github.com/influxdata/platform/tsdb/tsm1"
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/zap"
 )
